@@ -14,7 +14,7 @@ namespace REFITyoutube.ViewModel
     class PlayViewModel: INotifyPropertyChanged
     {
         public ICommand Play { get; set; }
-        public ObservableCollection<PlayView> PlayList { get; set; }
+        public List<Snippet> PlayList { get; set; }
         public event PropertyChangedEventHandler PropertyChanged;
         public PlayViewModel()
         {
@@ -27,7 +27,7 @@ namespace REFITyoutube.ViewModel
                    var apiresponse = RestService.For<IAPIser>("https://www.googleapis.com");
                    var playlist = await apiresponse.GetPLaylist();
 
-                   //PlayList.ItemsSource = playlist;
+                   PlayList = playlist;
                }
                else
                {
