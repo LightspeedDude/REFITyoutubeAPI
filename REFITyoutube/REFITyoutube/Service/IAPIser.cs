@@ -12,6 +12,7 @@ namespace REFITyoutube.Service
     //{
     //    public static string ApiKey = "AIzaSyDb0fEgyMvxmhIJO8kzR6AuOPcQak45ees";
     //}
+    [Headers("Content-Type: application/json")]
     public interface IAPIser
     {
         [Get("/v3/search?part=snippet&maxResults=10&q=Xamarin&type=playlist&key=AIzaSyDb0fEgyMvxmhIJO8kzR6AuOPcQak45ees")]
