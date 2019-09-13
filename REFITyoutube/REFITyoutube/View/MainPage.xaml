@@ -16,7 +16,7 @@
                             <StackLayout>
                                 <Label Text="{Binding Title}" />
                                 <Label Text="{Binding ChannelTitle}" />
-                                <Label Text="----------------"/>
+                                <Label Text="----------------------------"/>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
@@ -25,3 +25,19 @@
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
+    
+    
+<!--<ContentPage.Content>
+    <StackLayout Padding="20">
+        <Button Text="Get MakeUps" Clicked="OnGetMakeUpClicked" BackgroundColor="Black" TextColor="White" HorizontalOptions="FillAndExpand"/>
+
+        <ListView x:Name="MakeUpList">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Title}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage.Content>
+</ContentPage>-->

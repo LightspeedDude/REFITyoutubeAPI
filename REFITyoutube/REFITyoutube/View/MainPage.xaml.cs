@@ -22,6 +22,15 @@ namespace REFITyoutube
             InitializeComponent();
             BindingContext = new PlayViewModel();
         }
+
+        //async void OnGetMakeUpClicked(object sender, System.EventArgs e)
+        //{
+        //    var apiResponse = RestService.For<IMakeUpApi>("https://www.googleapis.com/youtube");
+        //    var makeUps = await apiResponse.GetMakeUps("xamarin");
+
+        //    MakeUpList.ItemsSource = makeUps;
+        //}
+
         //protected async override void OnAppearing()
         //{
         //    base.OnAppearing();
@@ -43,7 +52,7 @@ namespace REFITyoutube
         //    {
         //        await App.Current.MainPage.DisplayAlert("Connection Status", "Welp, you ain't got internet", "Ok");
         //    }
-           
+
         //}
 
     }

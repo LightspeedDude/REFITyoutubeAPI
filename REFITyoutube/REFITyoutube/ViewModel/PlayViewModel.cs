@@ -11,7 +11,7 @@ using Xamarin.Forms;
 
 namespace REFITyoutube.ViewModel
 {
-    class PlayViewModel: INotifyPropertyChanged
+    class PlayViewModel//: INotifyPropertyChanged
     {
         public ICommand Play { get; set; }
         public List<Snippet> PlayList { get; set; }
@@ -24,8 +24,8 @@ namespace REFITyoutube.ViewModel
                if (current == NetworkAccess.Internet)
                {
                    await App.Current.MainPage.DisplayAlert("Connection Status", "Yey, you have a connection.", "Ok");
-                   var apiresponse = RestService.For<IAPIser>("https://www.googleapis.com");
-                   var playlist = await apiresponse.GetPLaylist();
+                   var apiresponse = RestService.For<IAPIser>("https://www.googleapis.com/youtube");
+                   var playlist = await apiresponse.GetPlaylist("xamarin");
 
                    PlayList = playlist;
                }
