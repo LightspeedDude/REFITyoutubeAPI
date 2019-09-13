@@ -11,6 +11,7 @@ namespace REFITyoutube.Service
     //{
     //    public static string ApiKey = "AIzaSyDb0fEgyMvxmhIJO8kzR6AuOPcQak45ees";
     //}
+    [Headers("Content-Type: application/json")]
     public interface IAPIser
     {
 
