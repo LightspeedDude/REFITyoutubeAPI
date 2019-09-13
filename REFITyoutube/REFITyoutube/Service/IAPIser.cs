@@ -15,8 +15,9 @@ namespace REFITyoutube.Service
     {
 
         //[Get("/youtube/v3/search?part=snippet&maxResults=10&q=Xamarin&type=playlist&key={" + Config.ApiKey + "}")]
+        
         [Get("/youtube/v3/search?part=snippet&maxResults=10&q=Xamarin&type=playlist&key=AIzaSyDb0fEgyMvxmhIJO8kzR6AuOPcQak45ees")]
-        Task<List<PlayView>> GetPLaylist();
+        Task<List<Snippet>> GetPLaylist();
 
     }
 }
