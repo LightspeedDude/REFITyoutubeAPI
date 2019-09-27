@@ -26,7 +26,6 @@
     </ContentPage.Content>
 </ContentPage>
     
-    
 <!--<ContentPage.Content>
     <StackLayout Padding="20">
         <Button Text="Get MakeUps" Clicked="OnGetMakeUpClicked" BackgroundColor="Black" TextColor="White" HorizontalOptions="FillAndExpand"/>
