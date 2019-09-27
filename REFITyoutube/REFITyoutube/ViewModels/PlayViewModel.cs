@@ -19,30 +19,11 @@ namespace REFITyoutube.ViewModel
         public ICommand Play { get; set; }
         public ObservableCollection<Snippet> Playlist { get; set; }
 
-        //public List<Snippet> PlayList { get; set; }
-        //public event PropertyChangedEventHandler PropertyChanged;
-
 
         public PlayViewModel()
         {
             Play = new Command(async () => await RunSafe(GetData()));
 
-           // Play = new Command(async () =>
-           //{
-           //    var current = Connectivity.NetworkAccess;
-           //    if (current == NetworkAccess.Internet)
-           //    {
-           //        await App.Current.MainPage.DisplayAlert("Connection Status", "Yey, you have a connection.", "Ok");
-           //        var apiresponse = RestService.For<IAPIser>("https://www.googleapis.com/youtube");
-           //        var playlist = await apiresponse.GetPlaylist("xamarin");
-
-           //        PlayList = playlist;
-           //    }
-           //    else
-           //    {
-           //        await App.Current.MainPage.DisplayAlert("Connection Status", "Welp, you ain't got internet", "Ok");
-           //    }
-           //});
         }
         async Task GetData()
         {
